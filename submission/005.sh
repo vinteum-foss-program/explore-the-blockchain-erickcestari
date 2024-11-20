@@ -11,4 +11,4 @@ M=1
 
 MULTISIG_ADDRESS=$(bitcoin-cli createmultisig $M "$PUBLIC_KEYS")
 
-echo $MULTISIG_ADDRESS | jq .address
+echo $MULTISIG_ADDRESS | jq -r .address
